@@ -1,65 +1,11 @@
 import UIKit
 
 
+//let l1 = TwoSub.ListNode(2, TwoSub.ListNode(4, TwoSub.ListNode(3, nil)))
+//let l2 = TwoSub.ListNode(5, TwoSub.ListNode(6, TwoSub.ListNode(4, nil)))
+//TwoSub.addTwoNumbers(l1, l2)?.des()
 
-public class ListNode {
-    public var val: Int
-    public var next: ListNode?
-    public init() { self.val = 0; self.next = nil; }
-    public init(_ val: Int) { self.val = val; self.next = nil; }
-    public init(_ val: Int, _ next: ListNode?) { self.val = val; self.next = next; }
-    
-    func des() {
-        
-        
-        
-        var ss: ListNode = self
-        var ssCollection: [NSInteger] = [ss.val]
-        while ss.next != nil {
-            
-            ssCollection.append(ss.val)
-            
-            ss = self.next!
-        }
-        print(ssCollection)
-    }
-    
-    
-}
-
-
-class Solution {
-    static func addTwoNumbers(_ l1: ListNode?, _ l2: ListNode?) -> ListNode? {
-        
-        let newList:ListNode = ListNode(0)
-        
-        var result = newList
-        
-        var q1 = l1
-        var q2 = l2
-        
-        var addheader = 0
-        
-        while q1 != nil || q2 != nil {
-            let newVal = (q1?.val ?? 0) + (q2?.val ?? 0) + addheader
-            addheader = newVal/10
-            
-            result.next = ListNode(newVal%10)
-            result =  result.next!
-            
-            q1 = q1?.next
-            q2 = q2?.next
-        }
-        
-        if addheader == 1 {
-            result.next = ListNode(1)
-        }
-        
-        return newList.next
-    }
-}
-
-let l1 = ListNode(2, ListNode(4, ListNode(3, nil)))
-let l2 = ListNode(5, ListNode(6, ListNode(4, nil)))
-
-Solution.addTwoNumbers(l1, l2)?.des()
+let dominoes = [[1,2],[2,1],[3,4],[5,6]]
+//    [[1,2],[1,2],[1,1],[1,2],[2,2]]
+let result = numEquivDominoPairs(dominoes)
+print(result)
