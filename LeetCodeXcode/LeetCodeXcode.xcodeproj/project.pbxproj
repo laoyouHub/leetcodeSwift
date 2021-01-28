@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3643920525C2F2DC00C71DA1 /* pivotIndex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3643920425C2F2DC00C71DA1 /* pivotIndex.swift */; };
 		36A736FD25C0542B0014B780 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36A736FC25C0542B0014B780 /* main.swift */; };
 		36A7370525C063F10014B780 /* numEquivDominoPairs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36A7370425C063F10014B780 /* numEquivDominoPairs.swift */; };
 /* End PBXBuildFile section */
@@ -24,6 +25,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		3643920425C2F2DC00C71DA1 /* pivotIndex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pivotIndex.swift; sourceTree = "<group>"; };
 		36A736F925C0542B0014B780 /* LeetCodeXcode */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = LeetCodeXcode; sourceTree = BUILT_PRODUCTS_DIR; };
 		36A736FC25C0542B0014B780 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		36A7370425C063F10014B780 /* numEquivDominoPairs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = numEquivDominoPairs.swift; sourceTree = "<group>"; };
@@ -61,6 +63,7 @@
 			children = (
 				36A736FC25C0542B0014B780 /* main.swift */,
 				36A7370425C063F10014B780 /* numEquivDominoPairs.swift */,
+				3643920425C2F2DC00C71DA1 /* pivotIndex.swift */,
 			);
 			path = LeetCodeXcode;
 			sourceTree = "<group>";
@@ -122,6 +125,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3643920525C2F2DC00C71DA1 /* pivotIndex.swift in Sources */,
 				36A736FD25C0542B0014B780 /* main.swift in Sources */,
 				36A7370525C063F10014B780 /* numEquivDominoPairs.swift in Sources */,
 			);
